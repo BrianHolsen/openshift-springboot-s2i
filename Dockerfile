@@ -42,7 +42,7 @@ ADD jolokia /opt/jolokia/
 RUN chmod 775 -R /opt/jolokia
 
 # Install Maven
-RUN curl -O http://www-eu.apache.org/dist/maven/maven-3/${MAVEN_VERSION}/binaries/apache-maven-${MAVEN_VERSION}-bin.tar.gz \
+RUN curl -O http://www.apache.org/dist/maven/maven-3/${MAVEN_VERSION}/binaries/apache-maven-${MAVEN_VERSION}-bin.tar.gz \
  && mkdir -p /usr/local/apache-maven && tar zxvf apache-maven-${MAVEN_VERSION}-bin.tar.gz -C /usr/local/apache-maven \
  && rm -rf apache-maven-${MAVEN_VERSION}-bin.tar.gz \
  && chmod 775 -R /usr/local/apache-maven
